@@ -8,13 +8,15 @@
 }
 
 .button--orange-lg {
-    @include orange-button;
+    @include button;
+    background-color: $orange;
     margin-bottom:.5em;
     font-size: 1.2em;
     text-transform: uppercase;
 }
 
 .button--orange-md {
-    @include orange-button;
+    @include button;
+    background-color: $orange;
     font-size: 1em;
 }

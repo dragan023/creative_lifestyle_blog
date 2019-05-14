@@ -26,20 +26,39 @@ h1, h2, h3, h4, h5, h6, ul {
   background: #282828; }
 
 .button--orange-lg {
+  padding: .2em 1.5em;
+  text-decoration: none;
+  color: #fff;
+  opacity: .9;
+  transition: ease-in-out 200ms;
+  display: inline-block;
   background-color: #F3AE76;
   margin-bottom: .5em;
   font-size: 1.2em;
   text-transform: uppercase; }
+  .button--orange-lg:hover {
+    opacity: 1; }
 
 .button--orange-md {
+  padding: .2em 1.5em;
+  text-decoration: none;
+  color: #fff;
+  opacity: .9;
+  transition: ease-in-out 200ms;
+  display: inline-block;
   background-color: #F3AE76;
   font-size: 1em; }
+  .button--orange-md:hover {
+    opacity: 1; }
 
 .header-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2em 10em; }
+  @media (max-width: 780px) {
+    .header-wrapper {
+      padding: 0; } }
 
 .header-logo {
   width: 20%;
@@ -75,7 +94,7 @@ h1, h2, h3, h4, h5, h6, ul {
 
 .header-nav__list-item {
   display: inline-block;
-  padding: 1em 1.5em; }
+  padding: 2em 1.5em; }
 
 .header-nav__list-link {
   text-decoration: none;
@@ -84,8 +103,11 @@ h1, h2, h3, h4, h5, h6, ul {
   padding: 1em 2.5em; }
   .header-nav__list-link:hover {
     color: #F3AE76; }
+  @media (max-width: 1300px) {
+    .header-nav__list-link {
+      padding: 0; } }
 
-@media (max-width: 768px) {
+@media (max-width: 780px) {
   .header-wrapper {
     padding: 0; }
   .header-wrapper {
@@ -99,7 +121,7 @@ h1, h2, h3, h4, h5, h6, ul {
 .main-content {
   padding: 2em 20em;
   background-color: #F3AE76; }
-  @media (max-width: 1200px) {
+  @media (max-width: 1300px) {
     .main-content {
       padding: 2em; } }
 
@@ -136,14 +158,14 @@ h1, h2, h3, h4, h5, h6, ul {
   padding: 1em 2em .7em 2em;
   transform: translateX(-50%);
   background: rgba(255, 255, 255, 0.74); }
-  @media (max-width: 768px) {
+  @media (max-width: 780px) {
     .slider-hero__title {
       bottom: -1em;
       padding: .5em; } }
 
 .slider-hero__text {
   margin: 0; }
-  @media (max-width: 768px) {
+  @media (max-width: 780px) {
     .slider-hero__text {
       font-size: 3vw; } }
 
@@ -188,3 +210,106 @@ h1, h2, h3, h4, h5, h6, ul {
   margin: 0 auto;
   background: #123;
   padding: .5em 2em; }
+
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5em 20em;
+  background: #F3AE76;
+  justify-content: space-between; }
+  @media (max-width: 1300px) {
+    .posts {
+      padding: 2em; } }
+
+.post-item {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 32%;
+  min-width: 300px;
+  min-height: 400px;
+  margin-bottom: 1.5em; }
+  @media (max-width: 780px) {
+    .post-item {
+      min-height: 500px;
+      flex-basis: 100%; } }
+  @media (max-width: 465px) {
+    .post-item {
+      min-width: 0; } }
+
+.post-item__img {
+  background-position: center;
+  background-size: cover;
+  height: 60%; }
+
+.post-item__img-1 {
+  background-image: url(../images/posts_images/blog-thumb-1.png); }
+
+.post-item__img-2 {
+  background-image: url(../images/posts_images/blog-thumb-2.png); }
+
+.post-item__img-3 {
+  background-image: url(../images/posts_images/blog-thumb-3.png); }
+
+.post-item__img-4 {
+  background-image: url(../images/posts_images/blog-thumb-4.png); }
+
+.post-item__img-5 {
+  background-image: url(../images/posts_images/Bitmap.png); }
+
+.post-item__img-6 {
+  background-image: url(../images/posts_images/blog-thumb-6.png); }
+
+.post-item__img-7 {
+  background-image: url(../images/posts_images/blog-thumb-7.png); }
+
+.post-item__img-8 {
+  background-image: url(../images/posts_images/blog-thumb-8.png); }
+
+.post-item__content {
+  background: #fff;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.post-item__button {
+  margin-top: 1.5em; }
+
+.post-item__info {
+  color: #A9A9A9; }
+
+.post-item__date {
+  margin-left: 1em; }
+
+.post-item__title {
+  color: #525252;
+  text-align: center;
+  line-height: 32px; }
+
+.pagination {
+  display: flex;
+  width: 100%;
+  text-transform: uppercase;
+  justify-content: center;
+  margin: 2em; }
+  @media (max-width: 780px) {
+    .pagination {
+      justify-content: space-between;
+      margin: 1em;
+      font-size: 3vw; } }
+
+.pagination__item {
+  text-decoration: none;
+  color: #525252;
+  margin: 0 1em;
+  background: #fff;
+  padding: .5em; }
+  .pagination__item:active {
+    background: #525252;
+    color: #fff; }
+
+.pagination__num {
+  padding: .5em .8em; }
+  @media (max-width: 780px) {
+    .pagination__num {
+      margin: 0 .1em; } }
