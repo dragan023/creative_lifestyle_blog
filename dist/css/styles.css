@@ -157,13 +157,6 @@ h1, h2, h3, h4, h5, h6, ul {
       bottom: -1em;
       padding: .5em; } }
 
-.button--orange {
-  background: #F3AE76;
-  margin-bottom: .5em;
-  display: inline-block;
-  font-size: 1.2em;
-  text-transform: uppercase; }
-
 .slider-hero__text {
   margin: 0; }
   @media (max-width: 768px) {
