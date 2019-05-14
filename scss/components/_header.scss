@@ -3,6 +3,11 @@
     justify-content: space-between;
     align-items: center;
     padding: 2em 10em;
+
+    @include for-tablet() {
+        padding: 0;
+
+    }
 }
 
 .header-logo {
@@ -50,7 +55,7 @@
 
 .header-nav__list-item {
     display: inline-block;
-    padding: 1em 1.5em;
+    padding: 2em 1.5em;
 }
 
 .header-nav__list-link {
@@ -60,6 +65,10 @@
     padding: 1em 2.5em;
     &:hover {
         color: $orange;
+    }
+
+    @include for-desktop() {
+        padding: 0;
     }
 }
 
