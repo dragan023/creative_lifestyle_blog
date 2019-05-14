@@ -1,0 +1,64 @@
+.footer {
+    display: flex;
+    background: $gray;
+    color: #fff;
+    padding: 2em 20em;
+    justify-content: space-between;
+}
+
+.footer__heading {
+    text-transform: uppercase;
+    margin: 1em 0;
+}
+
+.footer__about {
+    flex: 0 0 30%;
+}
+
+.footer__about-paragraph {
+    line-height: 26px;
+}
+
+.footer__update {
+    flex: 0 0 30%;
+}
+
+.footer__email-input {
+    border: 1px solid gray;
+}
+
+.footer__email-input {
+    border: none;
+}
+
+.footer__posts {
+    flex: 0 0 30%;
+}
+
+.footer__item-paragraph {
+}
+
+.footer-wrapper__social {
+    display: flex;
+    list-style: none;
+}
+
+.footer__post-item {
+    display: flex;
+    margin: 1em 0;
+}
+
+// .footer__item-content {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+// }
+
+.footer__item-img-box {
+    margin-right: 1em;
+}
+
+.footer__post-img {
+    width: 8em;
+    height: auto;
+}
