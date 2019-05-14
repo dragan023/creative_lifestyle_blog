@@ -81,7 +81,8 @@
     align-items: flex-start;
     padding-left: 2em;
     margin-bottom: 1em;
-
+    background-position: center;
+    background-size: cover;
     @include for-mobile() {
         min-width: 90%;
     }
@@ -93,20 +94,14 @@
 
 .slider-wrapper--item-1 {
     background-image: url(../images/slider_images/featured.png);
-    background-position: center;
-    background-size: cover;
 }
 
 .slider-wrapper--item-2 {
     background-image: url(../images/slider_images/featured-1.png);
-    background-position: center;
-    background-size: cover;
 }
 
 .slider-wrapper--item-3 {
     background-image: url(../images/slider_images/featured2.png);
-    background-position: center;
-    background-size: cover;
 }
 
 .slider-button-box {

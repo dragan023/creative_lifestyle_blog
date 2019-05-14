@@ -1,5 +1,5 @@
 .button {
-    @include button();
+    @include button;
 }
 
 .button--dark {
@@ -8,15 +8,13 @@
 }
 
 .button--orange-lg {
-    @include button();
-    background: $orange;
+    @include orange-button;
     margin-bottom:.5em;
     font-size: 1.2em;
     text-transform: uppercase;
 }
 
 .button--orange-md {
-    @include button();
-    background: $orange;
+    @include orange-button;
     font-size: 1em;
 }
