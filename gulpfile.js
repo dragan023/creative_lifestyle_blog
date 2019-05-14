@@ -17,6 +17,5 @@ function sassWatch() {
     });
     gulp.watch('./scss/**/*.scss', sassTask);
     gulp.watch('./*.html').on('change', browserSync.reload);
-
 }
 exports.init = gulp.series(sassTask, sassWatch);

@@ -1,0 +1,111 @@
+.main-content {
+    padding: 2em 20em;
+    background-color: $orange;
+
+    @include for-desktop() {
+        padding: 2em;
+    }
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+}
+
+.slider-hero {
+    position: relative;
+}
+
+.slider-hero__background-img {
+    width: 100%;
+}
+
+.slider-hero__arrow-left {
+    position: absolute;
+    top: 50%;
+    left: 1em;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.slider-hero__arrow-right {
+    position: absolute;
+    top: 50%;
+    right: 1em;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.slider-hero__title {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    width: 70%;
+    padding: 1em 2em .7em 2em;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.74);
+
+    @include for-tablet() {    
+        bottom: -1em;
+        padding: .5em;
+    }
+}
+
+.slider-hero__text {
+    margin: 0;
+
+    @include for-tablet() {    
+        font-size: 3vw;
+    }
+}
+
+.slider-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 3em;
+
+    @include for-mobile() {
+        justify-content: center;
+    }
+}
+
+.slider-wrapper__item {
+    min-width: 200px;
+    flex-basis: 32%;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-left: 2em;
+    margin-bottom: 1em;
+    background-position: center;
+    background-size: cover;
+    @include for-mobile() {
+        min-width: 90%;
+    }
+}
+
+.slider-wrapper__item-paragraph {
+    color: #fff;
+}
+
+.slider-wrapper--item-1 {
+    background-image: url(../images/slider_images/featured.png);
+}
+
+.slider-wrapper--item-2 {
+    background-image: url(../images/slider_images/featured-1.png);
+}
+
+.slider-wrapper--item-3 {
+    background-image: url(../images/slider_images/featured2.png);
+}
+
+.slider-button-box {
+    margin: 0 auto;
+    background: #123;
+    padding: .5em 2em;
+}
