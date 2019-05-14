@@ -1,0 +1,22 @@
+.button {
+    @include button();
+}
+
+.button--dark {
+    text-transform: uppercase;
+    background: $gray--dark;
+}
+
+.button--orange-lg {
+    @include button();
+    background: $orange;
+    margin-bottom:.5em;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.button--orange-md {
+    @include button();
+    background: $orange;
+    font-size: 1em;
+}

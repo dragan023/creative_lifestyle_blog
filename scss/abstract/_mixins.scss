@@ -5,17 +5,14 @@
     color: #fff;
     opacity: .9;
     transition: ease-in-out 200ms;
-
+    display: inline-block;
     &:hover {
         opacity: 1;
     }
 }
 
 @mixin orange-button {
-    padding: .2em 1.5em;
     background-color: $orange;
-    text-decoration: none;
-    color: #fff;
 }
 
 // MEDIA QUERY
