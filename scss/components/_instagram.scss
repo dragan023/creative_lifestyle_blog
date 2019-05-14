@@ -3,63 +3,37 @@
     background: $orange;
     display: flex;
     flex-direction: column;
-
     @include for-desktop() {
         padding: 2em;
     }
 }
 
 .instagram__btn {
-    margin: 0 auto;
+    margin: 2em auto;
 }
 
 .instagram-feed {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    margin: -1%;
 }
 
-.instagram-feed__item {
-    background-size: cover;
-    flex-basis: 23%;
-    margin-top: 1em;
-    min-width: 200px;
-    min-height: 300px;
-    background: rgb(219, 219, 219);
+.instagram-feed-box {
+    flex: 0 0 25%;
+    height: auto;
+    padding: 1%;
+    // margin: 1em 0;
+    @include for-desktop {
+        flex: 0 0 50%;
+    }
+
+    @include for-mobile {
+        flex: 0 0 100%;
+    }
 }
 
-.instagram-feed--item-1 {
-    background: url(/dist/images/header_images/facebook-2.svg);
-}
-
-.instagram-feed--item-2 {
-    
-}
-
-.instagram-feed--item-3 {
-    
-}
-
-.instagram-feed--item-4 {
-    
-}
-
-.instagram-feed--item-5 {
-    
-}
-
-.instagram-feed--item-6 {
-    
-}
-
-.instagram-feed--item-7 {
-    
-}
-
-.instagram-feed--item-8 {
-    
-}
-
-.instagram-feed--item-9 {
-    
+.instagram-feed_image {
+    display: block;
+    width: 100%;
+    height: auto;
 }

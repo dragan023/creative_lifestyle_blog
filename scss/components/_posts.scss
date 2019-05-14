@@ -29,43 +29,9 @@
 }
 
 .post-item__img {
-    background-position: center;
-    background-size: cover;
-    height: 60%;
+    width: 100%;
+    height: 100%;
 }
-
-.post-item__img-1 {
-    background-image: url(../images/posts_images/blog-thumb-1.png);
-}
-
-.post-item__img-2 {
-    background-image: url(../images/posts_images/blog-thumb-2.png);
-}
-
-.post-item__img-3 {
-    background-image: url(../images/posts_images/blog-thumb-3.png);
-}
-
-.post-item__img-4 {
-    background-image: url(../images/posts_images/blog-thumb-4.png);
-}
-
-.post-item__img-5 {
-    background-image: url(../images/posts_images/Bitmap.png);
-}
-
-.post-item__img-6 {
-    background-image: url(../images/posts_images/blog-thumb-6.png);
-}
-
-.post-item__img-7 {
-    background-image: url(../images/posts_images/blog-thumb-7.png);
-}
-
-.post-item__img-8 {
-    background-image: url(../images/posts_images/blog-thumb-8.png);
-}
-
 
 .post-item__content {
     background: #fff;
