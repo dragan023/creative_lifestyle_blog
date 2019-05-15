@@ -1,0 +1,19 @@
+.social-list {
+    list-style: none;
+    padding: 0;
+}
+
+.social-list__social-item {
+    display: inline-block;
+    &:hover {
+        svg > path:nth-child(1) {
+            transition: ease-in-out 300ms;
+            fill: $orange;
+        }
+
+        svg > path:nth-child(2) {
+            transition: ease-in-out 100ms;
+            stroke: $orange;
+        }
+    }
+}

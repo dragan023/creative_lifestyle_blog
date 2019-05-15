@@ -1,0 +1,110 @@
+.footer {
+    background: $gray;
+    color: #fff;
+    padding: 2em 20em;
+
+    @include for-desktop() {
+        padding: 2em;
+    }
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @include for-tablet() {
+        flex-direction: column;
+    }
+
+    @include for-mobile() {
+        // text-align: center;
+    }
+}
+
+.footer__heading {
+    text-transform: uppercase;
+    margin: 1em 0;
+}
+
+.footer__about {
+    flex: 0 0 30%;
+}
+
+.footer__about-paragraph {
+    line-height: 26px;
+}
+
+.footer__update {
+    flex: 0 0 30%;
+
+    @include for-mobile() {
+        margin: 5em 0;
+    }
+}
+
+.footer__email-input-box {
+    border: 1px solid $gray--light;
+}
+
+.footer__email-input {
+    border: none;
+    background: none;
+    border-right: 1px solid $gray--light;
+    width: 85%;
+    padding: 1em;
+}
+
+.footer__posts {
+    flex: 0 0 30%;
+}
+
+.footer__item-paragraph {
+    margin: 0;
+}
+
+.footer-wrapper__social {
+    display: flex;
+    list-style: none;
+}
+
+.footer__post-item {
+    display: flex;
+    margin: 1em 0;
+
+    @include for-mobile() {
+        flex-direction: column;
+    }
+}
+
+.footer__item-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer__item-img-box {
+    margin-right: 1em;
+}
+
+.footer__post-img {
+    width: 5em;
+    height: auto;
+}
+
+.footer__copyright {
+    border-top: 1px solid $gray--light;
+    margin: 2em auto;
+    text-align: center;
+    display: block;
+    width: 60%;
+    padding: 2em;
+
+    @include for-tablet() {
+        padding: .5em;
+    }
+}
+
+.footer__link {
+    color: $orange;
+    text-decoration: none;
+}
