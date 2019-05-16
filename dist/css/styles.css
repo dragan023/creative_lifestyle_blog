@@ -327,12 +327,14 @@ h1, h2, h3, h4, h5, h6, ul {
 
 .social-list__social-item {
   display: inline-block; }
-  .social-list__social-item:hover svg > path:nth-child(1) {
-    transition: ease-in-out 300ms;
+
+.social-item__icon-svg {
+  width: 40px;
+  height: 40px;
+  fill: #a9a9a9;
+  transition: ease-in-out 200ms; }
+  .social-item__icon-svg:hover {
     fill: #F3AE76; }
-  .social-list__social-item:hover svg > path:nth-child(2) {
-    transition: ease-in-out 100ms;
-    stroke: #F3AE76; }
 
 .footer {
   background: #525252;
